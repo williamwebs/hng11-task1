@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
@@ -72,6 +76,25 @@ main {
   display: flex;
   gap: 2.5rem;
   height: 100%;
+}
+
+/* nav */
+nav {
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+
+  display: none;
+}
+
+.logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: var(--text-emphasis);
 }
 
 /* profile section */
@@ -310,7 +333,7 @@ span.numbering {
 }
 
 .goals__section .flex .goal {
-  flex-basis: 30%;
+  flex-basis: 47%;
   border: 1px solid var(--border-secondary);
   padding: 1.5rem 1rem;
   border-radius: 1rem;
@@ -344,4 +367,63 @@ span.numbering {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  nav {
+    display: flex;
+  }
+  .flex__container {
+    flex-direction: column;
+  }
+  .profile__container {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .profile {
+    background: var(--bg-secondary);
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+  }
+  .introduction__section .flex {
+    flex-direction: column;
+  }
+
+  .floating-nav__container {
+    display: none;
+  }
+  .main__content {
+    margin: 0;
+  }
+  .services__section .flex {
+    gap: 0.8rem;
+    flex-direction: column;
+  }
+
+  .frontend,
+  .wordpress {
+    width: 100%;
+  }
+  .goals__section .flex {
+    gap: 0.8rem;
+  }
+  .goals__section .flex .goal {
+    flex-basis: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1020px) {
+  .introduction__section .flex {
+    flex-direction: column;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 }
