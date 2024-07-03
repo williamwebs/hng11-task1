@@ -1,0 +1,285 @@
+i<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f3190e7689.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>William Anaza | Frontend Engineer</title>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+
+    <main class="relative container">
+      <div class="flex__container">
+        <!-- user profile -->
+        <div class="profile__container relative">
+          <div class="profile">
+            <!-- image -->
+            <div class="profile__picture">
+              <img
+                src="../public/assets/images/william-anaza.jpg"
+                alt="William Anaza"
+                data-testid="slackProfilePicture"
+              />
+            </div>
+
+            <div class="profile__info">
+              <h3 class="name" data-testid="slackDisplayName">
+                <span class="role">Slack Name:</span> William Anaza
+              </h3>
+              <span class="role">Stack: Frontend Developer</span>
+
+              <section class="flex link">
+                <i class="fa-regular fa-envelope icon"></i>
+                <a
+                  href="mailto:anazawilliam1@gmail.com"
+                  class="role"
+                  data-testid="slackEmail"
+                  >anazawilliam1@gmail.com</a
+                >
+              </section>
+
+              <!-- date & time in UTC -->
+              <section data-testid="currentTime" class="flex link">
+                <i class="fa-regular fa-clock icon"></i>
+                <p id="currentTimeUTC" class="role"></p>
+              </section>
+              <section data-testid="currentDay" class="flex link">
+                <i class="fa-regular fa-calendar icon"></i>
+                <p id="currentDay" class="role"></p>
+              </section>
+            </div>
+
+            <!-- social links -->
+            <div class="socials">
+              <div>
+                <a href=""><i class="fa-brands fa-linkedin-in icon"></i></a>
+              </div>
+              <div>
+                <a href=""><i class="fa-brands fa-facebook-f icon"></i></a>
+              </div>
+              <div>
+                <a href=""><i class="fa-brands fa-x-twitter icon"></i></a>
+              </div>
+              <div>
+                <a href=""> <i class="fa-brands fa-github icon"></i></a>
+              </div>
+            </div>
+
+            <!-- tech tools / stacks -->
+            <div class="stacks">
+              <span>ReactJS</span>
+              <span>NextJS</span>
+              <span>JavaScript</span>
+              <span>MongoDB</span>
+              <span>Google Cloud</span>
+              <span>React Query</span>
+              <span>Tailwind</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Firebase</span>
+              <span>Git</span>
+              <span>GitHub</span>
+            </div>
+            <!-- link to my cv -->
+
+            <div class="button__container">
+              <a
+                href="../public/assets/pdf/WILLIAM ANAZA (1).pdf"
+                class="cta"
+                download
+              >
+                Download CV <i class="fa-solid fa-file-arrow-down"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- main content of the page -->
+        <div class="main__content">
+          <div class="introduction__section">
+            <span class="sub__heading">
+              <i class="fa-solid fa-house icon"></i>
+              Introduce</span
+            >
+
+            <div class="flex">
+              <!-- content -->
+              <div class="content">
+                <h2>
+                  Transforming Ideas into
+                  <span class="emphasis">Scalable</span>,
+                  <span class="emphasis">Performant</span> &
+                  <span class="emphasis">Responsive</span> Digital Solutions
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Blanditiis velit itaque, asperiores est cumque fuga inventore
+                  placeat dolorum assumenda ab dolor perferendis, odit eveniet
+                  cupiditate?
+                </p>
+
+                <a href="#" class="cta__left"
+                  >Contact me <i class="fa-brands fa-whatsapp"></i
+                ></a>
+              </div>
+              <!-- image -->
+              <div class="image">
+                <img
+                  src="../public/assets/images/william-anaza.jpg"
+                  alt="William Anaza"
+                  data-testid="slackProfilePicture"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- about me -->
+          <div class="about__section">
+            <span class="sub__heading">
+              <i class="fa-solid fa-user icon"></i>
+              About me</span
+            >
+
+            <h2>
+              About
+              <span class="emphasis">Me</span>
+            </h2>
+
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+              nihil dicta provident rem pariatur quo qui voluptate soluta quia
+              fugit obcaecati, incidunt deleniti. Aliquam vitae impedit
+              distinctio perferendis in error recusandae atque assumenda
+              possimus reiciendis officiis sequi voluptates aut, voluptate nulla
+              ullam cupiditate vero blanditiis quas minima accusamus! Repellat,
+              facilis!
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+              nihil dicta provident rem pariatur quo qui voluptate soluta quia
+              fugit obcaecati, incidunt deleniti. Aliquam vitae impedit
+              distinctio perferendis in error recusandae atque assumenda
+              possimus reiciendis officiis sequi voluptates aut, voluptate nulla
+              ullam cupiditate vero blanditiis quas minima accusamus! Repellat,
+              facilis!
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+              nihil dicta provident rem pariatur quo qui voluptate soluta quia
+              fugit obcaecati, incidunt deleniti. Aliquam vitae impedit
+              distinctio perferendis in error recusandae atque assumenda
+              possimus reiciendis officiis sequi voluptates aut, voluptate nulla
+              ullam cupiditate vero blanditiis quas minima accusamus! Repellat,
+              facilis!
+            </p>
+          </div>
+
+          <!-- services -->
+          <div class="services__section">
+            <span class="sub__heading">
+              <i class="fa-solid fa-screwdriver-wrench icon"></i>
+              Services</span
+            >
+
+            <h2>
+              My
+              <span class="emphasis">Services</span>
+            </h2>
+
+            <div class="flex">
+              <div class="frontend">
+                <span class="numbering">01</span>
+
+                <h3>Frontend Development</h3>
+              </div>
+
+              <div class="wordpress">
+                <span class="numbering">02</span>
+
+                <h3>Wordpress Website Design</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- goals -->
+          <div class="goals__section">
+            <span class="sub__heading">
+              <i class="fa-solid fa-lightbulb icon"></i>
+              Goals</span
+            >
+
+            <h2>
+              My
+              <span class="emphasis">Goals</span>
+            </h2>
+
+            <div class="flex">
+              <div class="goal">
+                <span class="numbering">01</span>
+
+                <h3>Frontend Development</h3>
+              </div>
+
+              <div class="goal">
+                <span class="numbering">02</span>
+
+                <h3>Wordpress Website Design</h3>
+              </div>
+              <div class="goal">
+                <span class="numbering">03</span>
+
+                <h3>Wordpress Website Design</h3>
+              </div>
+              <div class="goal">
+                <span class="numbering">04</span>
+
+                <h3>Wordpress Website Design</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- side navigation bar -->
+        <div class="floating-nav__container">
+          <div class="floating__nav">
+            <!-- logo -->
+            <h4>WA</h4>
+
+            <!-- links -->
+            <a href="#">
+              <i class="fa-solid fa-house icon"></i>
+            </a>
+            <a href="#about">
+              <i class="fa-solid fa-user icon"></i>
+            </a>
+            <a href="#services">
+              <i class="fa-solid fa-screwdriver-wrench icon"></i>
+            </a>
+            <a href="#goals">
+              <i class="fa-solid fa-lightbulb icon"></i>
+            </a>
+
+            <a
+              href="mailto:anazawilliam1@gmail.com"
+              class="role"
+              data-testid="slackEmail"
+              ><i class="fa-regular fa-envelope icon"></i
+            ></a>
+            <a href=""> <i class="fa-brands fa-github icon"></i></a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="../scripts/app.js"></script>
+  </body>
+</html>
