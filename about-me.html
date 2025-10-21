@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f3190e7689.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>About William Anaza | Frontend Engineer</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- logo -->
+        <a href="#" class="logo">WA</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+          <span class="menu-icon">menu</span>
+          <span class="close-icon">close</span>
+        </button>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav">
+          <a href="/index.html">
+            <i class="fa-solid fa-house icon"></i>
+            <span>Home</span>
+          </a>
+          <a href="/about-me.html">
+            <i class="fa-solid fa-user icon"></i>
+            <span>About</span>
+          </a>
+          <a href="mailto:anazawilliam1@gmail.com" data-testid="slackEmail">
+            <i class="fa-regular fa-envelope icon"></i>
+            <span>Email</span>
+          </a>
+          <a href="https://github.com/williamwebs">
+            <i class="fa-brands fa-github icon"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="/contact-us.html">
+            <i class="fa-solid fa-phone icon"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="relative container" data-testid="test-about-page">
+      <div class="flex__container">
+          <!-- user profile -->
+        <div class="profile__container relative">
+          <div class="profile">
+            <!-- image -->
+            <div class="profile__picture">
+              <img
+                src="/public/assets/images/william-anaza.jpg"
+                alt="William Anaza"
+                data-testid="slackProfilePicture"
+              />
+            </div>
+
+            <div class="profile__info">
+              <h3 class="name" data-testid="slackDisplayName">
+                <span class="role">Slack Name:</span> William Anaza
+              </h3>
+              <span class="role">Stack: Frontend Developer</span>
+
+              <section class="flex link">
+                <i class="fa-regular fa-envelope icon"></i>
+                <a
+                  href="mailto:anazawilliam1@gmail.com"
+                  class="role"
+                  data-testid="slackEmail"
+                  >anazawilliam1@gmail.com</a
+                >
+              </section>
+
+              <!-- date & time in UTC -->
+              <section data-testid="currentTime" class="flex link">
+                <i class="fa-regular fa-clock icon"></i>
+                <p id="currentTimeUTC" class="role"></p>
+              </section>
+              <section data-testid="currentDay" class="flex link">
+                <i class="fa-regular fa-calendar icon"></i>
+                <p id="currentDay" class="role"></p>
+              </section>
+            </div>
+
+            <!-- social links -->
+            <div class="socials">
+              <div>
+                <a href=""><i class="fa-brands fa-linkedin-in icon"></i></a>
+              </div>
+              <div>
+                <a href=""><i class="fa-brands fa-facebook-f icon"></i></a>
+              </div>
+              <div>
+                <a href=""><i class="fa-brands fa-x-twitter icon"></i></a>
+              </div>
+              <div>
+                <a href="https://github.com/williamwebs">
+                  <i class="fa-brands fa-github icon"></i
+                ></a>
+              </div>
+              <!-- hng links -->
+              <div data-testid="hngLink">
+                <a href="https://hng.tech/learn"
+                  ><i class="fa fa-link icon"></i
+                ></a>
+              </div>
+              <div data-testid="keywordLink">
+                <a href="https://keyword.dog"
+                  ><i class="fa fa-link icon"></i
+                ></a>
+              </div>
+              <div data-testid="scrapeanywebLink">
+                <a href="https://scrapeanyweb.site"
+                  ><i class="fa fa-link icon"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- tech tools / stacks -->
+            <div class="stacks">
+              <span>ReactJS</span>
+              <span>NextJS</span>
+              <span>TypeScript</span>
+              <span>JavaScript</span>
+              <span>React Native</span>
+              <span>React Query</span>
+              <span>MongoDB</span>
+              <span>Tailwind</span>
+              <span>Firebase</span>
+              <span>Git</span>
+            </div>
+            <!-- link to my cv -->
+
+            <div class="button__container">
+              <a
+                href="/public/assets/pdf/William Anaza resume3.pdf"
+                class="cta"
+                download
+              >
+                Download CV <i class="fa-solid fa-file-arrow-down"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- main content of the page -->
+        <div class="main__content">
+          <div class="introduction__section">
+            <span class="sub__heading">
+              <i class="fa-solid fa-user icon"></i>
+              About Me - Reflections
+            </span>
+
+            <!-- Bio Section -->
+            <section class="about-section" data-testid="test-about-bio">
+              <h2>My Journey & Bio</h2>
+              <p>
+                As a passionate Frontend Engineer, my journey in technology has been driven by 
+                curiosity and a relentless pursuit of creating meaningful digital experiences. 
+                I believe that great software isn't just about code—it's about solving real problems 
+                and creating intuitive interfaces that users love.
+              </p>
+              <p>
+                My approach to development combines technical expertise with user-centered design 
+                principles. I thrive on transforming complex requirements into clean, maintainable 
+                code that not only functions flawlessly but also delivers exceptional user experiences.
+              </p>
+              <p>
+                Beyond coding, I'm constantly learning and adapting to new technologies and 
+                methodologies. The ever-evolving nature of frontend development excites me, and 
+                I'm committed to staying at the forefront of industry trends and best practices.
+              </p>
+            </section>
+
+            <!-- Goals Section -->
+            <section class="about-section" data-testid="test-about-goals">
+              <h2>Goals in This Program</h2>
+              <p>
+                My primary goal in this program is to deepen my understanding of modern web 
+                development practices and enhance my problem-solving skills through hands-on, 
+                real-world projects. I'm particularly excited about:
+              </p>
+              
+              <h3>Technical Mastery</h3>
+              <p>
+                Strengthening my expertise in React ecosystem, TypeScript, and advanced CSS 
+                techniques. I aim to master performance optimization and build more accessible, 
+                scalable applications.
+              </p>
+              
+              <h3>Collaborative Development</h3>
+              <p>
+                Working within a team environment to understand industry-standard workflows, 
+                version control best practices, and effective communication in technical teams.
+              </p>
+              
+              <h3>Full-Stack Exposure</h3>
+              <p>
+                While my focus remains on frontend, I want to gain practical understanding of 
+                backend technologies to become a more well-rounded developer who can contribute 
+                to discussions across the entire stack.
+              </p>
+            </section>
+
+            <!-- Areas of Low Confidence Section -->
+            <section class="about-section" data-testid="test-about-confidence">
+              <h2>Areas I'm Working To Strengthen</h2>
+              <p>
+                Being honest about areas for growth is crucial for development. Here are some 
+                aspects I'm actively working to improve:
+              </p>
+              
+              <h3>Advanced State Management</h3>
+              <p>
+                While comfortable with basic state management patterns, I want to deepen my 
+                understanding of complex state architectures and when to use different solutions 
+                beyond React's built-in state management.
+              </p>
+              
+              <h3>Performance Optimization at Scale</h3>
+              <p>
+                Understanding performance bottlenecks in large-scale applications and mastering 
+                advanced optimization techniques beyond the basics.
+              </p>
+              
+              <h3>Testing Strategies</h3>
+              <p>
+                Developing more comprehensive testing strategies that go beyond unit tests to 
+                include integration and end-to-end testing in complex applications.
+              </p>
+              
+              <h3>System Design Thinking</h3>
+              <p>
+                Improving my ability to architect larger systems from the ground up, considering 
+                scalability, maintainability, and team collaboration from the initial design phase.
+              </p>
+            </section>
+
+            <!-- Note to Future Self Section -->
+            <section class="about-section" data-testid="test-about-future-note">
+              <h2>Note to My Future Self</h2>
+              <p>
+                Dear Future William,
+              </p>
+              <p>
+                Remember why you started this journey—it was never just about writing code, 
+                but about creating impact through technology. Stay curious and never stop learning. 
+                The technologies will change, but the fundamental problem-solving skills and 
+                passion for creating great user experiences will always be valuable.
+              </p>
+              <p>
+                Don't be afraid to take on challenging projects that push you beyond your comfort 
+                zone. That's where the real growth happens. Remember that every expert was once 
+                a beginner, and every complex system was built one line of code at a time.
+              </p>
+              <p>
+                Stay humble, collaborate generously, and always make time to help others in 
+                their journey. The tech community thrives when we lift each other up.
+              </p>
+              <p>
+                Most importantly, maintain balance. Great code comes from a rested mind and 
+                a passionate heart.
+              </p>
+              <p>
+                <em>Keep building, keep learning, keep growing.</em>
+              </p>
+            </section>
+
+            <!-- Extra Thoughts Section -->
+            <section class="about-section" data-testid="test-about-extra">
+              <h2>Additional Reflections</h2>
+              
+              <h3>On the Evolution of Frontend Development</h3>
+              <p>
+                The frontend landscape has evolved dramatically, and it's fascinating to see 
+                how our role as frontend developers has expanded. We're no longer just 
+                implementing designs—we're architects of user experience, performance 
+                optimizers, and accessibility advocates.
+              </p>
+              
+              <h3>The Importance of Soft Skills</h3>
+              <p>
+                Technical skills get you in the door, but soft skills build your career. 
+                Communication, empathy, and the ability to explain complex technical concepts 
+                to non-technical stakeholders are becoming increasingly valuable in our field.
+              </p>
+              
+              <h3>Continuous Learning Mindset</h3>
+              <p>
+                In technology, standing still means falling behind. I've learned to embrace 
+                the constant learning curve as an opportunity rather than a burden. Each new 
+                framework, tool, or methodology is a chance to solve problems more effectively.
+              </p>
+              
+              <h3>Building for Humans</h3>
+              <p>
+                At the end of the day, we're building for people. Whether it's a simple 
+                landing page or a complex web application, the human experience should always 
+                be at the center of our technical decisions.
+              </p>
+              
+              <h3>Final Thought</h3>
+              <p>
+                This journey in tech is a marathon, not a sprint. It's about consistent growth, 
+                resilience in the face of challenges, and the joy of creating something that 
+                didn't exist before. I'm excited to see where this path leads and the impact 
+                we can create together.
+              </p>
+            </section>
+          </div>
+        </div>
+
+        <!-- side navigation bar -->
+        <div class="floating-nav__container">
+          <div class="floating__nav">
+            <!-- logo -->
+            <h4>WA</h4>
+
+            <!-- links -->
+            <a href="/index.html">
+              <i class="fa-solid fa-house icon"></i>
+            </a>
+            <a href="/about-me.html">
+              <i class="fa-solid fa-user icon"></i>
+            </a>
+            <a
+              href="mailto:anazawilliam1@gmail.com"
+              class="role"
+              data-testid="slackEmail"
+              ><i class="fa-regular fa-envelope icon"></i
+            ></a>
+            <a href="https://github.com/williamwebs"> <i class="fa-brands fa-github icon"></i></a>
+            <a href="/contact-us.html">
+              <i class="fa-solid fa-phone icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

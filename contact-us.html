@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f3190e7689.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contact William Anaza - Frontend Engineer</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- logo -->
+        <a href="#" class="logo">WA</a>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+          <span class="menu-icon">menu</span>
+          <span class="close-icon">close</span>
+        </button>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav">
+          <a href="/index.html">
+            <i class="fa-solid fa-house icon"></i>
+            <span>Home</span>
+          </a>
+          <a href="/about-me.html">
+            <i class="fa-solid fa-user icon"></i>
+            <span>About</span>
+          </a>
+          <a href="mailto:anazawilliam1@gmail.com" data-testid="slackEmail">
+            <i class="fa-regular fa-envelope icon"></i>
+            <span>Email</span>
+          </a>
+          <a href="https://github.com/williamwebs">
+            <i class="fa-brands fa-github icon"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="/contact-us.html">
+            <i class="fa-solid fa-phone icon"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main class="relative container">
+      <div class="flex__container">
+        <!-- main content of the page -->
+        <div class="main__content-contact">
+          <div class="introduction__section">
+            <div class="flex">
+              <!-- content -->
+              <div class="content">
+                <span class="sub__heading">
+                  <i class="fa-solid fa-link icon"></i>
+                  Contact Me</span
+                >
+                <h2>
+                  <span class="emphasis">Hello! <br /></span> Its
+                  <span class="emphasis">Me,</span> <br />I was
+                  <span class="emphasis">wondering</span> if after all you've
+                  seen you'll like to<span class="emphasis"> reach out</span>
+                </h2>
+              </div>
+
+              <!-- form -->
+              <div class="form__container">
+                <form class="form__wrapper">
+                  <div class="form__field">
+                    <label for="name">Full name</label>
+                    <input
+                      type="text"
+                      data-testid="test-contact-name"
+                      id="name"
+                    />
+                    <span
+                      data-testid="test-contact-error-name"
+                      aria-describedby=""
+                      >Error</span
+                    >
+                  </div>
+
+                  <div class="form__field">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      data-testid="test-contact-email"
+                    />
+                    <span data-testid="test-contact-error-email">Error</span>
+                  </div>
+
+                  <div class="form__field">
+                    <label for="subject">Subject</label>
+                    <input
+                      type="text"
+                      name="subject"
+                      id="subject"
+                      data-testid="test-contact-subject"
+                    />
+                    <span data-testid="test-contact-error-subject">Error</span>
+                  </div>
+
+                  <div class="form__field">
+                    <label for="message">Message</label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      rows="10"
+                      minlength="10"
+                      data-testid="test-contact-message"
+                    ></textarea>
+                    <span data-testid="test-contact-error-message">Error</span>
+                  </div>
+
+                  <div class="button__container contact-btn-container">
+                    <button
+                      data-testid="test-contact-submit"
+                      type="submit"
+                      class="cta"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- side navigation bar -->
+        <div class="floating-nav__container">
+          <div class="floating__nav">
+            <!-- logo -->
+            <h4>WA</h4>
+
+            <!-- links -->
+            <a href="/index.html">
+              <i class="fa-solid fa-house icon"></i>
+            </a>
+            <a href="/about-me.html">
+              <i class="fa-solid fa-user icon"></i>
+            </a>
+
+            <a
+              href="mailto:anazawilliam1@gmail.com"
+              class="role"
+              data-testid="slackEmail"
+              ><i class="fa-regular fa-envelope icon"></i
+            ></a>
+            <a href="https://github.com/williamwebs"> <i class="fa-brands fa-github icon"></i></a>
+            <a href="/contact-us.html">
+              <i class="fa-solid fa-phone icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/contact.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
